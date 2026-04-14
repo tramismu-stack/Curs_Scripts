@@ -14,5 +14,11 @@ echo "${X}-${Y}=${RESTA}"
 MULTIPLICACION=$((X*Y))
 echo "${X}*${Y}=${MULTIPLICACION}"
 
+if [[ ${Y} -eq 0 ]]
+then   
+    echo "No puedes dividir entre zero"
+    exit 1
+fi
+
 DIVISION=$(echo "scale=2; ${X}/${Y}" | bc)
 echo "${X}/${Y}=${DIVISION}"
