@@ -17,7 +17,6 @@ echo "Vamos a culcular el sumatorio de $1"
 n=$1
 suma=0
 
-
 for (( i=1;i<=n;i++ ))
 do
     echo "valor de i $i"
