@@ -2,7 +2,7 @@
 
 source $HOME/.telegram_bot/config
 
-MENSAJE="${@}"
+MENSAJE="${*}"
 
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 
